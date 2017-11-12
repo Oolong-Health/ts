@@ -9,11 +9,15 @@
 import Foundation
 import UIKit
 
+protocol SelectedProcedureDelegate: class {
+	func didSelectProcedure(with id: String)
+}
+
 class AppCoordinator {
-	private var navigationController: 		UINavigationController!
-	private let window:						UIWindow
-	private let dataFetcher: 				TSNetworkFetcher
-	private var errorHandler: 				TSErrorHandler
+	private var navigationController: 				UINavigationController!
+	private let window:								UIWindow
+	private let dataFetcher: 						TSNetworkFetcher
+	private var errorHandler: 						TSErrorHandler
 
 	init(with window: UIWindow,
 		 dataFetcher: TSNetworkFetcher,
@@ -26,16 +30,38 @@ class AppCoordinator {
 	}
 
 	func start() {
+		showSplashScreen()
+		loadProcedures()
+	}
+
+	func showSplashScreen() {
 		let splashViewModel = SplashViewModel.init(with: Constants.LocalizableKeys.SplashScreen.loading.localized())
 		let splashVC = SplashViewController.init(with: splashViewModel)
 		window.rootViewController = splashVC
 		window.makeKeyAndVisible()
 	}
 
-	func showSplashScreen() {
-		
+	func loadProcedures() {
+		dataFetcher.fetchAllProcedures().then {  procedures in
+			self.showProceduresScreen(with: procedures)
+			} .catch { error in
+				self.errorHandler.handleError(error)
+		}
 	}
 
+	func showProceduresScreen(with procedures: [Procedure]) {
+		var proceduresScreenModel = ProceduresViewModel.init(with: procedures)
+		proceduresScreenModel.delegate = self
+		let proceduresVC = ProcedureListViewController.init(with: proceduresScreenModel)
+		navigationController = UINavigationController.init(rootViewController:proceduresVC)
+		window.rootViewController = navigationController
+	}
+}
+
+extension AppCoordinator: SelectedProcedureDelegate {
+	func didSelectProcedure(with id: String) {
+		print(id)
+	}
 }
 
 extension AppCoordinator: ErrorHandlerDelegate

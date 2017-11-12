@@ -16,3 +16,6 @@
 
 // MARK: SPLASH SCREEN
 "Loading"								= "Loading...";
+
+// MARK: PROCEDURES SCREEN
+"Title"									= "Procedures List";

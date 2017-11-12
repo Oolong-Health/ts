@@ -24,6 +24,17 @@ protocol TSSplashViewModel {
 	var layout: TSLayoutProtocol { get }
 }
 
+protocol TSProcedureViewModel {
+	var title: String { get }
+	var cellViewModels: [TSProcedureCellViewModel] { get }
+	func didSelectRow(at indexPath: IndexPath)
+}
+
+protocol TSProcedureCellViewModel {
+	var title: String { get }
+	var iconURL: URL? { get }
+}
+
 protocol TSLayoutProtocol { }
 
 extension TSLayoutProtocol {
