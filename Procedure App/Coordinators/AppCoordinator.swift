@@ -14,10 +14,15 @@ protocol SelectedProcedureDelegate: class {
 }
 
 class AppCoordinator {
-	private var navigationController: 				UINavigationController!
+	private lazy var navigationController: UINavigationController = {
+		let navigationController = UINavigationController.init(rootViewController: procedureListVC)
+		return navigationController
+	}()
+
 	private let window:								UIWindow
 	private let dataFetcher: 						TSNetworkFetcher
 	private var errorHandler: 						TSErrorHandler
+	private let procedureListVC						= ProcedureListViewController.init(nibName: nil, bundle: nil)
 
 	init(with window: UIWindow,
 		 dataFetcher: TSNetworkFetcher,
@@ -50,11 +55,10 @@ class AppCoordinator {
 	}
 
 	func showProceduresScreen(with procedures: [Procedure]) {
+		window.rootViewController = navigationController
 		var proceduresScreenModel = ProceduresViewModel.init(with: procedures)
 		proceduresScreenModel.delegate = self
-		let proceduresVC = ProcedureListViewController.init(with: proceduresScreenModel)
-		navigationController = UINavigationController.init(rootViewController:proceduresVC)
-		window.rootViewController = navigationController
+		procedureListVC.update(with: proceduresScreenModel)
 	}
 }
 

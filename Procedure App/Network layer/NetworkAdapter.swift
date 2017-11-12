@@ -12,9 +12,6 @@ import Moya
 struct NetworkAdapter {
 
 	static let provider = MoyaProvider<TouchSurgeryAPI>()
-	/**
-	Makes a request to a specific TouchSurgery API target
-	*/
 	static func request(target: TouchSurgeryAPI,
 						success successCallback: @escaping (Response) -> Void,
 						error errorCallback: @escaping (APIResponseError) -> Void,

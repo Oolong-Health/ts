@@ -66,5 +66,4 @@ class SplashViewController: UIViewController {
 		}
 		spinner.startAnimating()
 	}
-
 }

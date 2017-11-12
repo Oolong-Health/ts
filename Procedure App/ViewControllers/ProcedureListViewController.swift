@@ -12,16 +12,22 @@ class ProcedureListViewController: UIViewController {
 
 	let cellIdentifier = "Procedure cell"
 
-	let model: TSProcedureViewModel
+	var model: TSProcedureViewModel!
 	let tableView = UITableView()
 
-	init(with model: TSProcedureViewModel) {
-		self.model = model
-		super.init(nibName: nil, bundle: nil)
-	}
+//	init(with model: TSProcedureViewModel) {
+//		self.model = model
+//		super.init(nibName: nil, bundle: nil)
+//	}
+//
+//	required init?(coder aDecoder: NSCoder) {
+//		fatalError("init(coder:) has not been implemented")
+//	}
 
-	required init?(coder aDecoder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
+	public func update(with model: TSProcedureViewModel) {
+		self.model = model
+		title = model.title
+		tableView.reloadData()
 	}
 
     override func viewDidLoad() {
@@ -30,7 +36,6 @@ class ProcedureListViewController: UIViewController {
     }
 
 	func setupUI() {
-		title = model.title
 		setupTableView(in: view)
 	}
 
@@ -60,6 +65,7 @@ extension ProcedureListViewController: UITableViewDataSource {
 	}
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		guard let model = model else { return 0 }
 		return model.cellViewModels.count
 	}
 
