@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		402163871FB6F5C400EFBE49 /* Procedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163861FB6F5C400EFBE49 /* Procedure.swift */; };
+		402163891FB6F96D00EFBE49 /* ProcedureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163881FB6F96D00EFBE49 /* ProcedureList.swift */; };
+		4021638B1FB7AE7700EFBE49 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021638A1FB7AE7700EFBE49 /* Phase.swift */; };
+		4021638D1FB7B63600EFBE49 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021638C1FB7B63600EFBE49 /* Constants.swift */; };
+		4021638F1FB7BC4000EFBE49 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021638E1FB7BC4000EFBE49 /* NetworkAdapter.swift */; };
+		402163921FB7C47400EFBE49 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163911FB7C47400EFBE49 /* Errors.swift */; };
+		402163941FB7C81800EFBE49 /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163931FB7C81800EFBE49 /* NetworkFetcher.swift */; };
+		402163961FB7DAAB00EFBE49 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163951FB7DAAB00EFBE49 /* ErrorHandler.swift */; };
+		402163981FB7DDBD00EFBE49 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 402163971FB7DDBC00EFBE49 /* Localizable.strings */; };
+		4021639A1FB7DFA100EFBE49 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163991FB7DFA100EFBE49 /* Utils.swift */; };
+		4021639D1FB7E72200EFBE49 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021639C1FB7E72200EFBE49 /* Protocols.swift */; };
 		40BA52D61FB6DB08003E2710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA52D51FB6DB08003E2710 /* AppDelegate.swift */; };
 		40BA52D81FB6DB08003E2710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA52D71FB6DB08003E2710 /* ViewController.swift */; };
 		40BA52DB1FB6DB08003E2710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40BA52D91FB6DB08003E2710 /* Main.storyboard */; };
 		40BA52DD1FB6DB08003E2710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40BA52DC1FB6DB08003E2710 /* Assets.xcassets */; };
 		40BA52E01FB6DB08003E2710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40BA52DE1FB6DB08003E2710 /* LaunchScreen.storyboard */; };
 		40BA52EB1FB6DB08003E2710 /* Procedure_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA52EA1FB6DB08003E2710 /* Procedure_AppTests.swift */; };
+		40BA52F91FB6E6B8003E2710 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA52F81FB6E6B8003E2710 /* NetworkLayer.swift */; };
+		DE8866D2EB111354D310722D /* Pods_Procedure_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52DDE7995AB341200286D8F /* Pods_Procedure_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		402163861FB6F5C400EFBE49 /* Procedure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedure.swift; sourceTree = "<group>"; };
+		402163881FB6F96D00EFBE49 /* ProcedureList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureList.swift; sourceTree = "<group>"; };
+		4021638A1FB7AE7700EFBE49 /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
+		4021638C1FB7B63600EFBE49 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4021638E1FB7BC4000EFBE49 /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
+		402163911FB7C47400EFBE49 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		402163931FB7C81800EFBE49 /* NetworkFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetcher.swift; sourceTree = "<group>"; };
+		402163951FB7DAAB00EFBE49 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		402163971FB7DDBC00EFBE49 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		402163991FB7DFA100EFBE49 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4021639C1FB7E72200EFBE49 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		40BA52D21FB6DB08003E2710 /* Procedure App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Procedure App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BA52D51FB6DB08003E2710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40BA52D71FB6DB08003E2710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +60,10 @@
 		40BA52E61FB6DB08003E2710 /* Procedure AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Procedure AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BA52EA1FB6DB08003E2710 /* Procedure_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedure_AppTests.swift; sourceTree = "<group>"; };
 		40BA52EC1FB6DB08003E2710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40BA52F81FB6E6B8003E2710 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		7D0448D0A1EF6774F40B73D4 /* Pods-Procedure App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Procedure App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Procedure App/Pods-Procedure App.debug.xcconfig"; sourceTree = "<group>"; };
+		A92387383016D77B757DD40C /* Pods-Procedure App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Procedure App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Procedure App/Pods-Procedure App.release.xcconfig"; sourceTree = "<group>"; };
+		B52DDE7995AB341200286D8F /* Pods_Procedure_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Procedure_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8866D2EB111354D310722D /* Pods_Procedure_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +85,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		402163851FB6F4B700EFBE49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				402163861FB6F5C400EFBE49 /* Procedure.swift */,
+				4021638A1FB7AE7700EFBE49 /* Phase.swift */,
+				402163881FB6F96D00EFBE49 /* ProcedureList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		402163901FB7C37900EFBE49 /* Error handling */ = {
+			isa = PBXGroup;
+			children = (
+				402163911FB7C47400EFBE49 /* Errors.swift */,
+				402163951FB7DAAB00EFBE49 /* ErrorHandler.swift */,
+			);
+			path = "Error handling";
+			sourceTree = "<group>";
+		};
+		4021639B1FB7E70700EFBE49 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4021639C1FB7E72200EFBE49 /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		40BA52C91FB6DB08003E2710 = {
 			isa = PBXGroup;
 			children = (
 				40BA52D41FB6DB08003E2710 /* Procedure App */,
 				40BA52E91FB6DB08003E2710 /* Procedure AppTests */,
 				40BA52D31FB6DB08003E2710 /* Products */,
+				BD4FD28845B333B9B8C74033 /* Pods */,
+				E0AC827456C300D05B9882BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +135,15 @@
 		40BA52D41FB6DB08003E2710 /* Procedure App */ = {
 			isa = PBXGroup;
 			children = (
+				402163901FB7C37900EFBE49 /* Error handling */,
+				402163851FB6F4B700EFBE49 /* Model */,
+				40BA52F71FB6E67F003E2710 /* Network layer */,
+				4021639B1FB7E70700EFBE49 /* Protocols */,
 				40BA52D51FB6DB08003E2710 /* AppDelegate.swift */,
 				40BA52D71FB6DB08003E2710 /* ViewController.swift */,
+				4021638C1FB7B63600EFBE49 /* Constants.swift */,
+				402163991FB7DFA100EFBE49 /* Utils.swift */,
+				402163971FB7DDBC00EFBE49 /* Localizable.strings */,
 				40BA52D91FB6DB08003E2710 /* Main.storyboard */,
 				40BA52DC1FB6DB08003E2710 /* Assets.xcassets */,
 				40BA52DE1FB6DB08003E2710 /* LaunchScreen.storyboard */,
@@ -96,6 +161,33 @@
 			path = "Procedure AppTests";
 			sourceTree = "<group>";
 		};
+		40BA52F71FB6E67F003E2710 /* Network layer */ = {
+			isa = PBXGroup;
+			children = (
+				40BA52F81FB6E6B8003E2710 /* NetworkLayer.swift */,
+				4021638E1FB7BC4000EFBE49 /* NetworkAdapter.swift */,
+				402163931FB7C81800EFBE49 /* NetworkFetcher.swift */,
+			);
+			path = "Network layer";
+			sourceTree = "<group>";
+		};
+		BD4FD28845B333B9B8C74033 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D0448D0A1EF6774F40B73D4 /* Pods-Procedure App.debug.xcconfig */,
+				A92387383016D77B757DD40C /* Pods-Procedure App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0AC827456C300D05B9882BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B52DDE7995AB341200286D8F /* Pods_Procedure_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40BA52EF1FB6DB08003E2710 /* Build configuration list for PBXNativeTarget "Procedure App" */;
 			buildPhases = (
+				3BB1068FEEC70CAC0330759C /* [CP] Check Pods Manifest.lock */,
 				40BA52CE1FB6DB08003E2710 /* Sources */,
 				40BA52CF1FB6DB08003E2710 /* Frameworks */,
 				40BA52D01FB6DB08003E2710 /* Resources */,
+				6E1EA19929648B8DC46A8158 /* [CP] Embed Pods Frameworks */,
+				08500EB12F8113B1AA960CD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40BA52E01FB6DB08003E2710 /* LaunchScreen.storyboard in Resources */,
+				402163981FB7DDBD00EFBE49 /* Localizable.strings in Resources */,
 				40BA52DD1FB6DB08003E2710 /* Assets.xcassets in Resources */,
 				40BA52DB1FB6DB08003E2710 /* Main.storyboard in Resources */,
 			);
@@ -194,13 +290,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08500EB12F8113B1AA960CD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Procedure App/Pods-Procedure App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BB1068FEEC70CAC0330759C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Procedure App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E1EA19929648B8DC46A8158 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Procedure App/Pods-Procedure App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-SwiftyJSONMapper/Moya_SwiftyJSONMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UPCarouselFlowLayout/UPCarouselFlowLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_SwiftyJSONMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UPCarouselFlowLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Procedure App/Pods-Procedure App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		40BA52CE1FB6DB08003E2710 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BA52F91FB6E6B8003E2710 /* NetworkLayer.swift in Sources */,
 				40BA52D81FB6DB08003E2710 /* ViewController.swift in Sources */,
+				402163941FB7C81800EFBE49 /* NetworkFetcher.swift in Sources */,
+				4021638F1FB7BC4000EFBE49 /* NetworkAdapter.swift in Sources */,
+				402163961FB7DAAB00EFBE49 /* ErrorHandler.swift in Sources */,
 				40BA52D61FB6DB08003E2710 /* AppDelegate.swift in Sources */,
+				402163891FB6F96D00EFBE49 /* ProcedureList.swift in Sources */,
+				4021638D1FB7B63600EFBE49 /* Constants.swift in Sources */,
+				402163871FB6F5C400EFBE49 /* Procedure.swift in Sources */,
+				4021639D1FB7E72200EFBE49 /* Protocols.swift in Sources */,
+				402163921FB7C47400EFBE49 /* Errors.swift in Sources */,
+				4021638B1FB7AE7700EFBE49 /* Phase.swift in Sources */,
+				4021639A1FB7DFA100EFBE49 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +528,7 @@
 		};
 		40BA52F01FB6DB08003E2710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D0448D0A1EF6774F40B73D4 /* Pods-Procedure App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +544,7 @@
 		};
 		40BA52F11FB6DB08003E2710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92387383016D77B757DD40C /* Pods-Procedure App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
