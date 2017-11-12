@@ -8,22 +8,20 @@
 
 import UIKit
 
+struct ProcedureListViewLayout: TSLayoutProtocol {
+	var rowHeight: CGFloat {
+		return 90
+	}
+}
+
 class ProcedureListViewController: UIViewController {
 
 	let cellIdentifier = "Procedure cell"
 
 	var model: TSProcedureViewModel!
 	let tableView = UITableView()
-
-//	init(with model: TSProcedureViewModel) {
-//		self.model = model
-//		super.init(nibName: nil, bundle: nil)
-//	}
-//
-//	required init?(coder aDecoder: NSCoder) {
-//		fatalError("init(coder:) has not been implemented")
-//	}
-
+	let layout = ProcedureListViewLayout()
+	
 	public func update(with model: TSProcedureViewModel) {
 		self.model = model
 		title = model.title
@@ -35,13 +33,13 @@ class ProcedureListViewController: UIViewController {
 		setupUI()
     }
 
-	func setupUI() {
+	private func setupUI() {
 		setupTableView(in: view)
 	}
 
-	func setupTableView(in view: UIView) {
+	private func setupTableView(in view: UIView) {
 		tableView.register(ProcedureTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-		tableView.rowHeight = 90
+		tableView.rowHeight = layout.rowHeight
 		tableView.delegate = self
 		tableView.dataSource = self
 		view.addSubview(tableView)

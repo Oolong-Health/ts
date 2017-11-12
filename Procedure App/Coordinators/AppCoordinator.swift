@@ -23,6 +23,7 @@ class AppCoordinator {
 	private let dataFetcher: 						TSNetworkFetcher
 	private var errorHandler: 						TSErrorHandler
 	private let procedureListVC						= ProcedureListViewController.init(nibName: nil, bundle: nil)
+	private let procedureDetailsVC					= ProcedureDetailsViewController.init(nibName: nil, bundle: nil)
 
 	init(with window: UIWindow,
 		 dataFetcher: TSNetworkFetcher,
@@ -54,6 +55,20 @@ class AppCoordinator {
 		}
 	}
 
+	func loadProcedureDetail(for procedureID: String) {
+		dataFetcher.fetchProcedureDetails(for: procedureID).then { procedure in
+			self.updateProcedureDetailView(with: procedure)
+			} .catch { error in
+				self.errorHandler.handleError(error)
+		}
+
+	}
+
+	func updateProcedureDetailView(with procedure: Procedure) {
+		let procedureDetailsVM = ProcedureDetailsViewModel.init(with: procedure)
+		self.procedureDetailsVC.update(model: procedureDetailsVM)
+	}
+
 	func showProceduresScreen(with procedures: [Procedure]) {
 		window.rootViewController = navigationController
 		var proceduresScreenModel = ProceduresViewModel.init(with: procedures)
@@ -64,7 +79,10 @@ class AppCoordinator {
 
 extension AppCoordinator: SelectedProcedureDelegate {
 	func didSelectProcedure(with id: String) {
-		print(id)
+		navigationController.pushViewController(procedureDetailsVC,
+												animated: true)
+		procedureDetailsVC.startLoading()
+		loadProcedureDetail(for: id)
 	}
 }
 

@@ -18,4 +18,8 @@
 "Loading"								= "Loading...";
 
 // MARK: PROCEDURES SCREEN
-"Title"									= "Procedures List";
+"Procedure screen title"				= "Procedures List";
+
+// MARK: PROCEDURE DETAILS SCREEN
+"Procedure details title"				= "Details";
+"Procedure phases"						= "Phases:";

@@ -35,6 +35,19 @@ protocol TSProcedureCellViewModel {
 	var iconURL: URL? { get }
 }
 
+protocol TSProcedureDetailsViewModel {
+	var title: String { get }
+	var phaseTitle: String { get }
+	var procedureName: String { get }
+	var cardURL: URL? { get }
+	var cellViewModels: [TSProcedurePhaseCellViewModel] { get }
+}
+
+protocol TSProcedurePhaseCellViewModel {
+	var title: String { get }
+	var iconURL: URL? { get }
+}
+
 protocol TSLayoutProtocol { }
 
 extension TSLayoutProtocol {

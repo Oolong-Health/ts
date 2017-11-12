@@ -46,7 +46,12 @@ struct Constants {
 		}
 
 		struct ProceduresScreen {
-			static let title						= "Title"
+			static let title						= "Procedure screen title"
+		}
+
+		struct ProcedureDetailsScreen {
+			static let title						= "Procedure details title"
+			static let phases						= "Procedure phases"
 		}
 	}
 }

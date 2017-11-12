@@ -25,6 +25,10 @@
 		402163AD1FB81DBB00EFBE49 /* ProcedureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163AC1FB81DBB00EFBE49 /* ProcedureTableViewCell.swift */; };
 		402163AF1FB823EA00EFBE49 /* ProceduresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163AE1FB823EA00EFBE49 /* ProceduresViewModel.swift */; };
 		402163B11FB824C200EFBE49 /* ProcedureCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163B01FB824C200EFBE49 /* ProcedureCellViewModel.swift */; };
+		407E1C7E1FB8577D00B7A460 /* PhaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E1C7D1FB8577D00B7A460 /* PhaseCollectionViewCell.swift */; };
+		40B46CC61FB84474000C9595 /* ProcedureDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B46CC51FB84474000C9595 /* ProcedureDetailsViewController.swift */; };
+		40B46CC81FB84E45000C9595 /* ProcedureDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B46CC71FB84E45000C9595 /* ProcedureDetailsViewModel.swift */; };
+		40B46CCA1FB84E5B000C9595 /* PhaseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B46CC91FB84E5B000C9595 /* PhaseCellViewModel.swift */; };
 		40BA52D61FB6DB08003E2710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA52D51FB6DB08003E2710 /* AppDelegate.swift */; };
 		40BA52D81FB6DB08003E2710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA52D71FB6DB08003E2710 /* ViewController.swift */; };
 		40BA52DD1FB6DB08003E2710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40BA52DC1FB6DB08003E2710 /* Assets.xcassets */; };
@@ -63,6 +67,10 @@
 		402163AC1FB81DBB00EFBE49 /* ProcedureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureTableViewCell.swift; sourceTree = "<group>"; };
 		402163AE1FB823EA00EFBE49 /* ProceduresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceduresViewModel.swift; sourceTree = "<group>"; };
 		402163B01FB824C200EFBE49 /* ProcedureCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureCellViewModel.swift; sourceTree = "<group>"; };
+		407E1C7D1FB8577D00B7A460 /* PhaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		40B46CC51FB84474000C9595 /* ProcedureDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureDetailsViewController.swift; sourceTree = "<group>"; };
+		40B46CC71FB84E45000C9595 /* ProcedureDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureDetailsViewModel.swift; sourceTree = "<group>"; };
+		40B46CC91FB84E5B000C9595 /* PhaseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseCellViewModel.swift; sourceTree = "<group>"; };
 		40BA52D21FB6DB08003E2710 /* Procedure App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Procedure App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BA52D51FB6DB08003E2710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40BA52D71FB6DB08003E2710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +146,7 @@
 			children = (
 				402163A21FB7EFAD00EFBE49 /* SplashViewController.swift */,
 				402163A71FB7FB2900EFBE49 /* ProcedureListViewController.swift */,
+				40B46CC51FB84474000C9595 /* ProcedureDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -148,6 +157,8 @@
 				402163A51FB7EFD800EFBE49 /* SplashViewModel.swift */,
 				402163AE1FB823EA00EFBE49 /* ProceduresViewModel.swift */,
 				402163B01FB824C200EFBE49 /* ProcedureCellViewModel.swift */,
+				40B46CC71FB84E45000C9595 /* ProcedureDetailsViewModel.swift */,
+				40B46CC91FB84E5B000C9595 /* PhaseCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -156,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				402163AC1FB81DBB00EFBE49 /* ProcedureTableViewCell.swift */,
+				407E1C7D1FB8577D00B7A460 /* PhaseCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -414,7 +426,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407E1C7E1FB8577D00B7A460 /* PhaseCollectionViewCell.swift in Sources */,
 				40BA52F91FB6E6B8003E2710 /* NetworkLayer.swift in Sources */,
+				40B46CC81FB84E45000C9595 /* ProcedureDetailsViewModel.swift in Sources */,
 				40BA52D81FB6DB08003E2710 /* ViewController.swift in Sources */,
 				402163A81FB7FB2900EFBE49 /* ProcedureListViewController.swift in Sources */,
 				402163AD1FB81DBB00EFBE49 /* ProcedureTableViewCell.swift in Sources */,
@@ -425,12 +439,14 @@
 				40BA52D61FB6DB08003E2710 /* AppDelegate.swift in Sources */,
 				402163A01FB7EB9100EFBE49 /* AppCoordinator.swift in Sources */,
 				402163A61FB7EFD800EFBE49 /* SplashViewModel.swift in Sources */,
+				40B46CC61FB84474000C9595 /* ProcedureDetailsViewController.swift in Sources */,
 				402163891FB6F96D00EFBE49 /* ProcedureList.swift in Sources */,
 				4021638D1FB7B63600EFBE49 /* Constants.swift in Sources */,
 				402163A31FB7EFAD00EFBE49 /* SplashViewController.swift in Sources */,
 				402163871FB6F5C400EFBE49 /* Procedure.swift in Sources */,
 				4021639D1FB7E72200EFBE49 /* Protocols.swift in Sources */,
 				402163B11FB824C200EFBE49 /* ProcedureCellViewModel.swift in Sources */,
+				40B46CCA1FB84E5B000C9595 /* PhaseCellViewModel.swift in Sources */,
 				402163921FB7C47400EFBE49 /* Errors.swift in Sources */,
 				4021638B1FB7AE7700EFBE49 /* Phase.swift in Sources */,
 				4021639A1FB7DFA100EFBE49 /* Utils.swift in Sources */,

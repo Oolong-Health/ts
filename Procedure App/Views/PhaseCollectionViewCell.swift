@@ -1,5 +1,5 @@
 //
-//  ProcedureTableViewCell.swift
+//  PhaseCollectionViewCell.swift
 //  Procedure App
 //
 //  Created by Mat Nuckowski on 12/11/17.
@@ -7,23 +7,18 @@
 //
 
 import UIKit
-import SnapKit
-import Alamofire
-import AlamofireImage
 
-struct TSProcedureCellLayout: TSLayoutProtocol {
-	let iconHeight: CGFloat = 50
+struct PhaseCollectionViewLayout: TSLayoutProtocol {
+	var iconHeight = 130
 }
 
-class ProcedureTableViewCell: UITableViewCell {
-
+class PhaseCollectionViewCell: UICollectionViewCell {
 	let titleLabel 		= UILabel()
 	let iconImageView	= UIImageView()
 	let layout			= TSProcedureCellLayout()
 
-	override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-		super.init(style: style,
-				   reuseIdentifier: reuseIdentifier)
+	override init(frame: CGRect) {
+		super.init(frame: frame)
 		self.setupUI()
 	}
 
@@ -31,15 +26,12 @@ class ProcedureTableViewCell: UITableViewCell {
 		fatalError("init(coder:) has not been implemented")
 	}
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
+	override func awakeFromNib() {
+		super.awakeFromNib()
+	}
 
 	private func setupUI() {
+		self.backgroundColor = .white
 		setupIconImage(in: contentView)
 		setupTitleLable(in: contentView)
 	}
@@ -47,26 +39,30 @@ class ProcedureTableViewCell: UITableViewCell {
 	private func setupTitleLable(in view: UIView) {
 		titleLabel.font = UIFont.systemFont(ofSize: 14,
 											weight: .thin)
+		titleLabel.numberOfLines = 2
+		titleLabel.textAlignment = .center
 		titleLabel.textColor = .darkGray
 		view.addSubview(titleLabel)
 		titleLabel.snp.makeConstraints { (make) in
-			make.centerY.equalToSuperview()
+			make.centerX.equalToSuperview()
+			make.trailing.equalToSuperview().offset(layout.trailingMargin)
 			make.leading.equalToSuperview().offset(layout.leadingMargin)
+			make.bottom.equalToSuperview().offset(layout.bottomMargin)
 		}
 	}
 
 	private func setupIconImage(in view: UIView) {
-		iconImageView.contentMode = .scaleAspectFit
+		iconImageView.contentMode = .scaleAspectFill
 		iconImageView.tintColor = UIColor.touchSurgeryColor()
 		view.addSubview(iconImageView)
 		iconImageView.snp.makeConstraints { (make) in
-			make.centerY.equalToSuperview()
-			make.trailing.equalToSuperview().offset(layout.trailingMargin)
+			make.centerX.equalToSuperview()
+			make.top.equalToSuperview().offset(layout.topMargin)
 			make.height.equalTo(layout.iconHeight)
 		}
 	}
 
-	func update(with model: TSProcedureCellViewModel) {
+	func update(with model: TSProcedurePhaseCellViewModel) {
 		titleLabel.text = model.title
 
 		let placeholder = #imageLiteral(resourceName: "placeholder").withRenderingMode(.alwaysTemplate)
@@ -78,4 +74,5 @@ class ProcedureTableViewCell: UITableViewCell {
 								  placeholderImage: placeholder)
 
 	}
+    
 }
