@@ -40,5 +40,8 @@ struct Constants {
 			static let clientErrorTitle				= "Client error title"
 			static let serverErrorTitle				= "Server error title"
 		}
+		struct SplashScreen {
+			static let loading						= "Loading"
+		}
 	}
 }

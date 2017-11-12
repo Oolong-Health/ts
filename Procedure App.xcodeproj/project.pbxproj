@@ -18,9 +18,12 @@
 		402163981FB7DDBD00EFBE49 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 402163971FB7DDBC00EFBE49 /* Localizable.strings */; };
 		4021639A1FB7DFA100EFBE49 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163991FB7DFA100EFBE49 /* Utils.swift */; };
 		4021639D1FB7E72200EFBE49 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021639C1FB7E72200EFBE49 /* Protocols.swift */; };
+		402163A01FB7EB9100EFBE49 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021639F1FB7EB9100EFBE49 /* AppCoordinator.swift */; };
+		402163A31FB7EFAD00EFBE49 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163A21FB7EFAD00EFBE49 /* SplashViewController.swift */; };
+		402163A61FB7EFD800EFBE49 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163A51FB7EFD800EFBE49 /* SplashViewModel.swift */; };
+		402163A81FB7FB2900EFBE49 /* ProcedureListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163A71FB7FB2900EFBE49 /* ProcedureListViewController.swift */; };
 		40BA52D61FB6DB08003E2710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA52D51FB6DB08003E2710 /* AppDelegate.swift */; };
 		40BA52D81FB6DB08003E2710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA52D71FB6DB08003E2710 /* ViewController.swift */; };
-		40BA52DB1FB6DB08003E2710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40BA52D91FB6DB08003E2710 /* Main.storyboard */; };
 		40BA52DD1FB6DB08003E2710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40BA52DC1FB6DB08003E2710 /* Assets.xcassets */; };
 		40BA52E01FB6DB08003E2710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40BA52DE1FB6DB08003E2710 /* LaunchScreen.storyboard */; };
 		40BA52EB1FB6DB08003E2710 /* Procedure_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA52EA1FB6DB08003E2710 /* Procedure_AppTests.swift */; };
@@ -50,10 +53,13 @@
 		402163971FB7DDBC00EFBE49 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		402163991FB7DFA100EFBE49 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		4021639C1FB7E72200EFBE49 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		4021639F1FB7EB9100EFBE49 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		402163A21FB7EFAD00EFBE49 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		402163A51FB7EFD800EFBE49 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		402163A71FB7FB2900EFBE49 /* ProcedureListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureListViewController.swift; sourceTree = "<group>"; };
 		40BA52D21FB6DB08003E2710 /* Procedure App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Procedure App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BA52D51FB6DB08003E2710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40BA52D71FB6DB08003E2710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		40BA52DA1FB6DB08003E2710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40BA52DC1FB6DB08003E2710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40BA52DF1FB6DB08003E2710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40BA52E11FB6DB08003E2710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,6 +118,31 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		4021639E1FB7EB7700EFBE49 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				4021639F1FB7EB9100EFBE49 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		402163A11FB7ED9700EFBE49 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				402163A21FB7EFAD00EFBE49 /* SplashViewController.swift */,
+				402163A71FB7FB2900EFBE49 /* ProcedureListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		402163A41FB7EFBE00EFBE49 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				402163A51FB7EFD800EFBE49 /* SplashViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		40BA52C91FB6DB08003E2710 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +166,9 @@
 		40BA52D41FB6DB08003E2710 /* Procedure App */ = {
 			isa = PBXGroup;
 			children = (
+				4021639E1FB7EB7700EFBE49 /* Coordinators */,
+				402163A41FB7EFBE00EFBE49 /* ViewModels */,
+				402163A11FB7ED9700EFBE49 /* ViewControllers */,
 				402163901FB7C37900EFBE49 /* Error handling */,
 				402163851FB6F4B700EFBE49 /* Model */,
 				40BA52F71FB6E67F003E2710 /* Network layer */,
@@ -144,7 +178,6 @@
 				4021638C1FB7B63600EFBE49 /* Constants.swift */,
 				402163991FB7DFA100EFBE49 /* Utils.swift */,
 				402163971FB7DDBC00EFBE49 /* Localizable.strings */,
-				40BA52D91FB6DB08003E2710 /* Main.storyboard */,
 				40BA52DC1FB6DB08003E2710 /* Assets.xcassets */,
 				40BA52DE1FB6DB08003E2710 /* LaunchScreen.storyboard */,
 				40BA52E11FB6DB08003E2710 /* Info.plist */,
@@ -277,7 +310,6 @@
 				40BA52E01FB6DB08003E2710 /* LaunchScreen.storyboard in Resources */,
 				402163981FB7DDBD00EFBE49 /* Localizable.strings in Resources */,
 				40BA52DD1FB6DB08003E2710 /* Assets.xcassets in Resources */,
-				40BA52DB1FB6DB08003E2710 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,12 +399,16 @@
 			files = (
 				40BA52F91FB6E6B8003E2710 /* NetworkLayer.swift in Sources */,
 				40BA52D81FB6DB08003E2710 /* ViewController.swift in Sources */,
+				402163A81FB7FB2900EFBE49 /* ProcedureListViewController.swift in Sources */,
 				402163941FB7C81800EFBE49 /* NetworkFetcher.swift in Sources */,
 				4021638F1FB7BC4000EFBE49 /* NetworkAdapter.swift in Sources */,
 				402163961FB7DAAB00EFBE49 /* ErrorHandler.swift in Sources */,
 				40BA52D61FB6DB08003E2710 /* AppDelegate.swift in Sources */,
+				402163A01FB7EB9100EFBE49 /* AppCoordinator.swift in Sources */,
+				402163A61FB7EFD800EFBE49 /* SplashViewModel.swift in Sources */,
 				402163891FB6F96D00EFBE49 /* ProcedureList.swift in Sources */,
 				4021638D1FB7B63600EFBE49 /* Constants.swift in Sources */,
+				402163A31FB7EFAD00EFBE49 /* SplashViewController.swift in Sources */,
 				402163871FB6F5C400EFBE49 /* Procedure.swift in Sources */,
 				4021639D1FB7E72200EFBE49 /* Protocols.swift in Sources */,
 				402163921FB7C47400EFBE49 /* Errors.swift in Sources */,
@@ -400,14 +436,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		40BA52D91FB6DB08003E2710 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				40BA52DA1FB6DB08003E2710 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		40BA52DE1FB6DB08003E2710 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

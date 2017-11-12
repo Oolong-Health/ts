@@ -13,3 +13,6 @@
 "Redirection error title"				= "Redirection Error";
 "Client error title"					= "Client Error";
 "Server error title"					= "Server Error";
+
+// MARK: SPLASH SCREEN
+"Loading"								= "Loading...";

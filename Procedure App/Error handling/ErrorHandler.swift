@@ -17,10 +17,6 @@ protocol ErrorHandlerDelegate: class {
 struct ErrorHandler: TSErrorHandler {
 	weak var delegate: ErrorHandlerDelegate?
 
-	init(with delegate: ErrorHandlerDelegate) {
-		self.delegate = delegate
-	}
-
 	func handleError(_ error: Error) {
 		if let error = error as? MoyaError {
 			handleMoyaError(error)
