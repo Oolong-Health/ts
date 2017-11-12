@@ -26,6 +26,7 @@
 		402163AF1FB823EA00EFBE49 /* ProceduresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163AE1FB823EA00EFBE49 /* ProceduresViewModel.swift */; };
 		402163B11FB824C200EFBE49 /* ProcedureCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402163B01FB824C200EFBE49 /* ProcedureCellViewModel.swift */; };
 		407E1C7E1FB8577D00B7A460 /* PhaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E1C7D1FB8577D00B7A460 /* PhaseCollectionViewCell.swift */; };
+		407E1C801FB861A900B7A460 /* ErrorHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E1C7F1FB861A900B7A460 /* ErrorHandlerTests.swift */; };
 		40B46CC61FB84474000C9595 /* ProcedureDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B46CC51FB84474000C9595 /* ProcedureDetailsViewController.swift */; };
 		40B46CC81FB84E45000C9595 /* ProcedureDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B46CC71FB84E45000C9595 /* ProcedureDetailsViewModel.swift */; };
 		40B46CCA1FB84E5B000C9595 /* PhaseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B46CC91FB84E5B000C9595 /* PhaseCellViewModel.swift */; };
@@ -68,6 +69,7 @@
 		402163AE1FB823EA00EFBE49 /* ProceduresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceduresViewModel.swift; sourceTree = "<group>"; };
 		402163B01FB824C200EFBE49 /* ProcedureCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureCellViewModel.swift; sourceTree = "<group>"; };
 		407E1C7D1FB8577D00B7A460 /* PhaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		407E1C7F1FB861A900B7A460 /* ErrorHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlerTests.swift; sourceTree = "<group>"; };
 		40B46CC51FB84474000C9595 /* ProcedureDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureDetailsViewController.swift; sourceTree = "<group>"; };
 		40B46CC71FB84E45000C9595 /* ProcedureDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureDetailsViewModel.swift; sourceTree = "<group>"; };
 		40B46CC91FB84E5B000C9595 /* PhaseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseCellViewModel.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				40BA52EA1FB6DB08003E2710 /* Procedure_AppTests.swift */,
+				407E1C7F1FB861A900B7A460 /* ErrorHandlerTests.swift */,
 				40BA52EC1FB6DB08003E2710 /* Info.plist */,
 			);
 			path = "Procedure AppTests";
@@ -458,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40BA52EB1FB6DB08003E2710 /* Procedure_AppTests.swift in Sources */,
+				407E1C801FB861A900B7A460 /* ErrorHandlerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

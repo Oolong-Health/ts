@@ -76,18 +76,18 @@ struct ErrorHandler: TSErrorHandler {
 // MARK: HANDLING API RESPONSE ERRORS
 extension ErrorHandler {
 	func showRedirectionError(_ error: APIResponseError) {
-		delegate?.showAlert(with: Constants.LocalizableKeys.Alerts.redirectionErrorTitle,
+		delegate?.showAlert(with: Constants.LocalizableKeys.Alerts.redirectionErrorTitle.localized(),
 							message: Constants.LocalizableKeys.Alerts.genericErrorMessage)
 	}
 
 	func showClientError(_ error: APIResponseError) {
-		delegate?.showAlert(with: Constants.LocalizableKeys.Alerts.clientErrorTitle,
+		delegate?.showAlert(with: Constants.LocalizableKeys.Alerts.clientErrorTitle.localized(),
 							message: Constants.LocalizableKeys.Alerts.genericErrorMessage)
 
 	}
 
 	func showServerError(_ error: APIResponseError) {
-		delegate?.showAlert(with: Constants.LocalizableKeys.Alerts.serverErrorTitle,
+		delegate?.showAlert(with: Constants.LocalizableKeys.Alerts.serverErrorTitle.localized(),
 							message: Constants.LocalizableKeys.Alerts.genericErrorMessage)
 	}
 }
